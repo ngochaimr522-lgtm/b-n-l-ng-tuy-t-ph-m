@@ -121,13 +121,13 @@ const Index = () => {
             <h1 className="font-serif text-white text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-balance mb-6">
               Số 63 Bến Láng
               <span className="block mt-3 gradient-gold-text italic">
-                Tuyệt phẩm nhà phố kinh doanh 2026
+                Kiệt tác nhà phố thương mại 2026
               </span>
             </h1>
 
             <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-              4 tầng – 60m² – mặt đường 15m. Vị trí vàng giao thương, thiết kế hiện đại,
-              sẵn sàng đón dòng khách kinh doanh đỉnh cao.
+              Tài sản giới hạn tại tuyến 2 Lê Hồng Phong — 4 tầng kiến trúc tân cổ điển,
+              60m² thổ cư, mặt đường 15m. Một địa chỉ định danh đẳng cấp chủ nhân.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -136,7 +136,7 @@ const Index = () => {
                 size="lg"
                 className="bg-gradient-gold text-luxury-navy-deep hover:opacity-90 hover:scale-[1.02] transition-all shadow-gold font-semibold px-8 h-14 text-base rounded-none"
               >
-                Nhận báo giá & Xem nhà ngay
+                Đặt lịch tham quan riêng tư
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
@@ -145,14 +145,14 @@ const Index = () => {
                 variant="outline"
                 className="bg-transparent border-white/40 text-white hover:bg-white hover:text-luxury-navy-deep h-14 px-8 rounded-none"
               >
-                Xem hình ảnh
+                Khám phá không gian
               </Button>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 text-xs tracking-[0.3em] uppercase">
-          Cuộn xuống
+          Khám phá
         </div>
       </section>
 
@@ -160,9 +160,9 @@ const Index = () => {
       <section className="py-24 bg-luxury-cream">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Thông số vàng</div>
+            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Đặc trưng kiến tạo</div>
             <h2 className="font-serif text-luxury-navy text-4xl md:text-5xl mb-4">
-              Kiến trúc cân bằng từng centimet
+              Tỉ lệ hoàn hảo — Công năng tối ưu
             </h2>
             <div className="w-16 h-px bg-luxury-gold mx-auto" />
           </div>
@@ -197,9 +197,9 @@ const Index = () => {
       <section id="gallery" className="py-24 bg-luxury-navy-deep">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Cảm xúc sống</div>
+            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Trải nghiệm không gian</div>
             <h2 className="font-serif text-white text-4xl md:text-5xl mb-4">
-              Một hành trình qua từng không gian
+              Mỗi khung hình — Một chuẩn mực sống
             </h2>
             <div className="w-16 h-px bg-luxury-gold mx-auto" />
           </div>
@@ -237,13 +237,14 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Vị trí & Tiện ích</div>
+              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Vị trí chiến lược</div>
               <h2 className="font-serif text-luxury-navy text-4xl md:text-5xl mb-6 leading-tight">
-                Trái tim Lê Hồng Phong – Mạch máu thương mại Hải Phòng
+                Trung tâm Lê Hồng Phong — Nhịp đập thương mại Hải Phòng
               </h2>
               <p className="text-muted-foreground mb-10 leading-relaxed">
-                Tọa lạc tại Số 63 Bến Láng – tuyến 2 Lê Hồng Phong, kết nối tức thì
-                tới mọi tiện ích cao cấp, trung tâm thương mại, trường học và sân bay quốc tế Cát Bi.
+                An tọa tại Số 63 Bến Láng — tuyến 2 đại lộ Lê Hồng Phong, kết nối liền mạch
+                tới hệ sinh thái tiện ích cao cấp, trung tâm thương mại, hệ thống giáo dục
+                và Cảng hàng không quốc tế Cát Bi.
               </p>
 
               <div className="space-y-4">

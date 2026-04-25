@@ -50,9 +50,9 @@ const Index = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   const specs = [
-    { icon: Maximize2, label: "Diện tích", value: "60 m²" },
+    { icon: Maximize2, label: "Diện tích sàn", value: "60 m²" },
     { icon: MoveHorizontal, label: "Mặt đường", value: "15 m" },
-    { icon: Building2, label: "Số tầng", value: "4 Tầng" },
+    { icon: Building2, label: "Quy mô", value: "4 Tầng" },
     { icon: BedDouble, label: "Phòng ngủ", value: "4 PN" },
   ];
 

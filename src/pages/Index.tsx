@@ -160,9 +160,9 @@ const Index = () => {
       <section className="py-24 bg-luxury-cream">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Thông số vàng</div>
+            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Đặc trưng kiến tạo</div>
             <h2 className="font-serif text-luxury-navy text-4xl md:text-5xl mb-4">
-              Kiến trúc cân bằng từng centimet
+              Tỉ lệ hoàn hảo — Công năng tối ưu
             </h2>
             <div className="w-16 h-px bg-luxury-gold mx-auto" />
           </div>

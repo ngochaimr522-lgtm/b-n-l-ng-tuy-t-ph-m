@@ -57,22 +57,22 @@ const Index = () => {
   ];
 
   const gallery = [
-    { src: img1, label: "Mặt tiền sang trọng" },
-    { src: img2, label: "Tuyến đường 15m" },
-    { src: img3, label: "Phòng khách & Gara" },
-    { src: img4, label: "Bếp hiện đại" },
-    { src: img9, label: "Cầu thang nghệ thuật" },
-    { src: img6, label: "Phòng ngủ sàn gỗ" },
-    { src: img7, label: "Phòng ngủ ấm cúng" },
-    { src: img5, label: "Không gian sinh hoạt" },
-    { src: img10, label: "Sân thượng thoáng đãng" },
+    { src: img1, label: "Mặt tiền tân cổ điển" },
+    { src: img2, label: "Trục đường thương mại 15m" },
+    { src: img3, label: "Phòng khách & Garage liền kề" },
+    { src: img4, label: "Bếp tích hợp tiêu chuẩn châu Âu" },
+    { src: img9, label: "Cầu thang điêu khắc" },
+    { src: img6, label: "Phòng ngủ master sàn gỗ tự nhiên" },
+    { src: img7, label: "Suite ngủ tối giản tinh tế" },
+    { src: img5, label: "Không gian sinh hoạt chung" },
+    { src: img10, label: "Sân thượng giếng trời" },
   ];
 
   const amenities = [
-    { icon: ShoppingBag, label: "Chợ Bến Láng", dist: "200 m" },
-    { icon: School, label: "Trường học các cấp", dist: "500 m" },
-    { icon: Store, label: "BigC / GO! Hải Phòng", dist: "1.5 km" },
-    { icon: Plane, label: "Sân bay Cát Bi", dist: "4 km" },
+    { icon: ShoppingBag, label: "Chợ Bến Láng truyền thống", dist: "200 m" },
+    { icon: School, label: "Cụm trường liên cấp", dist: "500 m" },
+    { icon: Store, label: "TTTM BigC / GO! Hải Phòng", dist: "1.5 km" },
+    { icon: Plane, label: "Cảng HK Quốc tế Cát Bi", dist: "4 km" },
   ];
 
   return (

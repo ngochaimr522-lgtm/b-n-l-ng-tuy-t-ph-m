@@ -197,9 +197,9 @@ const Index = () => {
       <section id="gallery" className="py-24 bg-luxury-navy-deep">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Cảm xúc sống</div>
+            <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Trải nghiệm không gian</div>
             <h2 className="font-serif text-white text-4xl md:text-5xl mb-4">
-              Một hành trình qua từng không gian
+              Mỗi khung hình — Một chuẩn mực sống
             </h2>
             <div className="w-16 h-px bg-luxury-gold mx-auto" />
           </div>

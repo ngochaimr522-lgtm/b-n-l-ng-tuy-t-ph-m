@@ -237,13 +237,14 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Vị trí & Tiện ích</div>
+              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Vị trí chiến lược</div>
               <h2 className="font-serif text-luxury-navy text-4xl md:text-5xl mb-6 leading-tight">
-                Trái tim Lê Hồng Phong – Mạch máu thương mại Hải Phòng
+                Trung tâm Lê Hồng Phong — Nhịp đập thương mại Hải Phòng
               </h2>
               <p className="text-muted-foreground mb-10 leading-relaxed">
-                Tọa lạc tại Số 63 Bến Láng – tuyến 2 Lê Hồng Phong, kết nối tức thì
-                tới mọi tiện ích cao cấp, trung tâm thương mại, trường học và sân bay quốc tế Cát Bi.
+                An tọa tại Số 63 Bến Láng — tuyến 2 đại lộ Lê Hồng Phong, kết nối liền mạch
+                tới hệ sinh thái tiện ích cao cấp, trung tâm thương mại, hệ thống giáo dục
+                và Cảng hàng không quốc tế Cát Bi.
               </p>
 
               <div className="space-y-4">

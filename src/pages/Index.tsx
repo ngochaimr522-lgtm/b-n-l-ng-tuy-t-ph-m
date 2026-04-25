@@ -292,21 +292,22 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="text-white">
-              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Cam kết pháp lý</div>
+              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Bảo chứng pháp lý</div>
               <h2 className="font-serif text-4xl md:text-5xl mb-6 leading-tight">
-                Sổ đỏ chính chủ. <br />
-                <span className="gradient-gold-text italic">Sang tên trong ngày.</span>
+                Sổ đỏ chính chủ.<br />
+                <span className="gradient-gold-text italic">Công chứng sang tên trong ngày.</span>
               </h2>
               <p className="text-white/70 mb-10 leading-relaxed max-w-md">
-                100% pháp lý minh bạch, hỗ trợ vay vốn ngân hàng đến 70%.
-                Đội ngũ chuyên viên SOTH Home đồng hành trọn vẹn từ tư vấn đến công chứng.
+                Hồ sơ pháp lý hoàn thiện, minh bạch tuyệt đối. Hỗ trợ phương án tài chính
+                và vay vốn ngân hàng đến 70% giá trị tài sản. Đội ngũ chuyên viên SOTH Home
+                đồng hành tận tâm từ tư vấn đến công chứng giao dịch.
               </p>
 
               <div className="flex items-center gap-3 mb-8 p-4 bg-white/5 border border-luxury-gold/30">
                 <ShieldCheck className="w-8 h-8 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <div className="font-serif text-white text-lg">Sổ đỏ riêng – Chính chủ</div>
-                  <div className="text-white/60 text-sm">Hồ sơ kiểm chứng tại văn phòng giao dịch</div>
+                  <div className="font-serif text-white text-lg">Sổ đỏ riêng — Pháp lý sạch</div>
+                  <div className="text-white/60 text-sm">Hồ sơ thẩm định trực tiếp tại văn phòng giao dịch</div>
                 </div>
               </div>
 
@@ -316,7 +317,7 @@ const Index = () => {
                     <Phone className="w-5 h-5 text-luxury-navy-deep" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-xs uppercase tracking-wider">Hotline 24/7</div>
+                    <div className="text-white/60 text-xs uppercase tracking-wider">Đường dây chuyên viên 24/7</div>
                     <div className="text-white text-xl font-serif group-hover:text-luxury-gold transition-colors">
                       {PHONE}
                     </div>
@@ -327,7 +328,7 @@ const Index = () => {
                     <Mail className="w-5 h-5 text-luxury-navy-deep" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-xs uppercase tracking-wider">Email</div>
+                    <div className="text-white/60 text-xs uppercase tracking-wider">Thư điện tử</div>
                     <div className="text-white text-lg group-hover:text-luxury-gold transition-colors">
                       {EMAIL}
                     </div>
@@ -337,14 +338,14 @@ const Index = () => {
             </div>
 
             <form onSubmit={handleSubmit} className="bg-white p-10 shadow-luxe">
-              <h3 className="font-serif text-luxury-navy text-3xl mb-2">Đăng ký xem nhà</h3>
+              <h3 className="font-serif text-luxury-navy text-3xl mb-2">Đặt lịch tham quan</h3>
               <p className="text-muted-foreground mb-8 text-sm">
-                Để lại thông tin – Chuyên viên liên hệ trong 15 phút.
+                Quý khách vui lòng để lại thông tin — Chuyên viên cao cấp sẽ liên hệ trong vòng 15 phút.
               </p>
 
               <div className="space-y-5">
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Họ và tên *</label>
+                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Quý danh *</label>
                   <Input
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -363,11 +364,11 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Lời nhắn</label>
+                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Yêu cầu riêng</label>
                   <Textarea
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tôi muốn xem nhà vào cuối tuần..."
+                    placeholder="Tôi mong muốn tham quan vào cuối tuần..."
                     rows={4}
                     className="mt-2 rounded-none border-luxury-navy/20 focus-visible:ring-luxury-gold resize-none"
                   />
@@ -376,7 +377,7 @@ const Index = () => {
                   type="submit"
                   className="w-full h-14 bg-luxury-navy hover:bg-luxury-navy-deep text-white rounded-none font-semibold tracking-wider uppercase text-sm"
                 >
-                  Gửi yêu cầu xem nhà
+                  Gửi yêu cầu tham quan
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </div>

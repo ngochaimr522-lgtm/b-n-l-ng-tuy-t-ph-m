@@ -118,5 +118,45 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
   }
 }
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .gradient-gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-luxury-navy { background-color: hsl(var(--luxury-navy)); }
+  .bg-luxury-navy-deep { background-color: hsl(var(--luxury-navy-deep)); }
+  .bg-luxury-gold { background-color: hsl(var(--luxury-gold)); }
+  .bg-luxury-cream { background-color: hsl(var(--luxury-cream)); }
+  .text-luxury-gold { color: hsl(var(--luxury-gold)); }
+  .text-luxury-navy { color: hsl(var(--luxury-navy)); }
+  .border-luxury-gold { border-color: hsl(var(--luxury-gold)); }
+  .shadow-luxe { box-shadow: var(--shadow-luxe); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-card-luxe { box-shadow: var(--shadow-card); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-dark { background: var(--gradient-dark); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.animate-fade-up { animation: fade-up 0.9s var(--transition-luxe) both; }
+.animate-ken-burns { animation: ken-burns 18s ease-in-out infinite alternate; }

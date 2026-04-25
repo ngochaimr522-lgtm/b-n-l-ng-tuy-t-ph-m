@@ -39,10 +39,10 @@ const Index = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone) {
-      toast.error("Vui lòng nhập họ tên và số điện thoại");
+      toast.error("Quý khách vui lòng cung cấp họ tên và số điện thoại");
       return;
     }
-    toast.success("Đã gửi yêu cầu! Chúng tôi sẽ liên hệ trong 15 phút.");
+    toast.success("Trân trọng cảm ơn Quý khách. Chuyên viên sẽ liên hệ trong 15 phút.");
     setForm({ name: "", phone: "", message: "" });
   };
 

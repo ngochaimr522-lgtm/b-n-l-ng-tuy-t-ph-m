@@ -8,8 +8,25 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 30% 98%;
+    --foreground: 220 40% 12%;
+
+    --luxury-navy: 218 45% 14%;
+    --luxury-navy-deep: 220 50% 9%;
+    --luxury-gold: 38 65% 52%;
+    --luxury-gold-light: 42 80% 68%;
+    --luxury-cream: 40 35% 96%;
+    --luxury-stone: 30 12% 88%;
+
+    --gradient-hero: linear-gradient(180deg, hsl(220 50% 9% / 0.85) 0%, hsl(220 50% 9% / 0.55) 50%, hsl(220 50% 9% / 0.9) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 65% 52%) 0%, hsl(42 80% 68%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(218 45% 14%) 0%, hsl(220 50% 9%) 100%);
+
+    --shadow-luxe: 0 25px 60px -15px hsl(220 50% 9% / 0.35);
+    --shadow-gold: 0 10px 40px -10px hsl(38 65% 52% / 0.4);
+    --shadow-card: 0 8px 30px -8px hsl(220 50% 9% / 0.18);
+
+    --transition-luxe: cubic-bezier(0.25, 0.1, 0.25, 1);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -101,5 +118,45 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
   }
 }
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .gradient-gold-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-luxury-navy { background-color: hsl(var(--luxury-navy)); }
+  .bg-luxury-navy-deep { background-color: hsl(var(--luxury-navy-deep)); }
+  .bg-luxury-gold { background-color: hsl(var(--luxury-gold)); }
+  .bg-luxury-cream { background-color: hsl(var(--luxury-cream)); }
+  .text-luxury-gold { color: hsl(var(--luxury-gold)); }
+  .text-luxury-navy { color: hsl(var(--luxury-navy)); }
+  .border-luxury-gold { border-color: hsl(var(--luxury-gold)); }
+  .shadow-luxe { box-shadow: var(--shadow-luxe); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-card-luxe { box-shadow: var(--shadow-card); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-dark { background: var(--gradient-dark); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.animate-fade-up { animation: fade-up 0.9s var(--transition-luxe) both; }
+.animate-ken-burns { animation: ken-burns 18s ease-in-out infinite alternate; }

@@ -121,13 +121,13 @@ const Index = () => {
             <h1 className="font-serif text-white text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-balance mb-6">
               Số 63 Bến Láng
               <span className="block mt-3 gradient-gold-text italic">
-                Tuyệt phẩm nhà phố kinh doanh 2026
+                Kiệt tác nhà phố thương mại 2026
               </span>
             </h1>
 
             <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-              4 tầng – 60m² – mặt đường 15m. Vị trí vàng giao thương, thiết kế hiện đại,
-              sẵn sàng đón dòng khách kinh doanh đỉnh cao.
+              Tài sản giới hạn tại tuyến 2 Lê Hồng Phong — 4 tầng kiến trúc tân cổ điển,
+              60m² thổ cư, mặt đường 15m. Một địa chỉ định danh đẳng cấp chủ nhân.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -136,7 +136,7 @@ const Index = () => {
                 size="lg"
                 className="bg-gradient-gold text-luxury-navy-deep hover:opacity-90 hover:scale-[1.02] transition-all shadow-gold font-semibold px-8 h-14 text-base rounded-none"
               >
-                Nhận báo giá & Xem nhà ngay
+                Đặt lịch tham quan riêng tư
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
@@ -145,14 +145,14 @@ const Index = () => {
                 variant="outline"
                 className="bg-transparent border-white/40 text-white hover:bg-white hover:text-luxury-navy-deep h-14 px-8 rounded-none"
               >
-                Xem hình ảnh
+                Khám phá không gian
               </Button>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 text-xs tracking-[0.3em] uppercase">
-          Cuộn xuống
+          Khám phá
         </div>
       </section>
 

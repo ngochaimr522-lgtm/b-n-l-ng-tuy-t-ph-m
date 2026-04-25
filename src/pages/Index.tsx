@@ -39,10 +39,10 @@ const Index = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone) {
-      toast.error("Vui lòng nhập họ tên và số điện thoại");
+      toast.error("Quý khách vui lòng cung cấp họ tên và số điện thoại");
       return;
     }
-    toast.success("Đã gửi yêu cầu! Chúng tôi sẽ liên hệ trong 15 phút.");
+    toast.success("Trân trọng cảm ơn Quý khách. Chuyên viên sẽ liên hệ trong 15 phút.");
     setForm({ name: "", phone: "", message: "" });
   };
 
@@ -50,29 +50,29 @@ const Index = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   const specs = [
-    { icon: Maximize2, label: "Diện tích", value: "60 m²" },
+    { icon: Maximize2, label: "Diện tích sàn", value: "60 m²" },
     { icon: MoveHorizontal, label: "Mặt đường", value: "15 m" },
-    { icon: Building2, label: "Số tầng", value: "4 Tầng" },
+    { icon: Building2, label: "Quy mô", value: "4 Tầng" },
     { icon: BedDouble, label: "Phòng ngủ", value: "4 PN" },
   ];
 
   const gallery = [
-    { src: img1, label: "Mặt tiền sang trọng" },
-    { src: img2, label: "Tuyến đường 15m" },
-    { src: img3, label: "Phòng khách & Gara" },
-    { src: img4, label: "Bếp hiện đại" },
-    { src: img9, label: "Cầu thang nghệ thuật" },
-    { src: img6, label: "Phòng ngủ sàn gỗ" },
-    { src: img7, label: "Phòng ngủ ấm cúng" },
-    { src: img5, label: "Không gian sinh hoạt" },
-    { src: img10, label: "Sân thượng thoáng đãng" },
+    { src: img1, label: "Mặt tiền tân cổ điển" },
+    { src: img2, label: "Trục đường thương mại 15m" },
+    { src: img3, label: "Phòng khách & Garage liền kề" },
+    { src: img4, label: "Bếp tích hợp tiêu chuẩn châu Âu" },
+    { src: img9, label: "Cầu thang điêu khắc" },
+    { src: img6, label: "Phòng ngủ master sàn gỗ tự nhiên" },
+    { src: img7, label: "Suite ngủ tối giản tinh tế" },
+    { src: img5, label: "Không gian sinh hoạt chung" },
+    { src: img10, label: "Sân thượng giếng trời" },
   ];
 
   const amenities = [
-    { icon: ShoppingBag, label: "Chợ Bến Láng", dist: "200 m" },
-    { icon: School, label: "Trường học các cấp", dist: "500 m" },
-    { icon: Store, label: "BigC / GO! Hải Phòng", dist: "1.5 km" },
-    { icon: Plane, label: "Sân bay Cát Bi", dist: "4 km" },
+    { icon: ShoppingBag, label: "Chợ Bến Láng truyền thống", dist: "200 m" },
+    { icon: School, label: "Cụm trường liên cấp", dist: "500 m" },
+    { icon: Store, label: "TTTM BigC / GO! Hải Phòng", dist: "1.5 km" },
+    { icon: Plane, label: "Cảng HK Quốc tế Cát Bi", dist: "4 km" },
   ];
 
   return (
@@ -292,21 +292,22 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="text-white">
-              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Cam kết pháp lý</div>
+              <div className="text-luxury-gold text-xs tracking-[0.3em] uppercase mb-3">Bảo chứng pháp lý</div>
               <h2 className="font-serif text-4xl md:text-5xl mb-6 leading-tight">
-                Sổ đỏ chính chủ. <br />
-                <span className="gradient-gold-text italic">Sang tên trong ngày.</span>
+                Sổ đỏ chính chủ.<br />
+                <span className="gradient-gold-text italic">Công chứng sang tên trong ngày.</span>
               </h2>
               <p className="text-white/70 mb-10 leading-relaxed max-w-md">
-                100% pháp lý minh bạch, hỗ trợ vay vốn ngân hàng đến 70%.
-                Đội ngũ chuyên viên SOTH Home đồng hành trọn vẹn từ tư vấn đến công chứng.
+                Hồ sơ pháp lý hoàn thiện, minh bạch tuyệt đối. Hỗ trợ phương án tài chính
+                và vay vốn ngân hàng đến 70% giá trị tài sản. Đội ngũ chuyên viên SOTH Home
+                đồng hành tận tâm từ tư vấn đến công chứng giao dịch.
               </p>
 
               <div className="flex items-center gap-3 mb-8 p-4 bg-white/5 border border-luxury-gold/30">
                 <ShieldCheck className="w-8 h-8 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <div className="font-serif text-white text-lg">Sổ đỏ riêng – Chính chủ</div>
-                  <div className="text-white/60 text-sm">Hồ sơ kiểm chứng tại văn phòng giao dịch</div>
+                  <div className="font-serif text-white text-lg">Sổ đỏ riêng — Pháp lý sạch</div>
+                  <div className="text-white/60 text-sm">Hồ sơ thẩm định trực tiếp tại văn phòng giao dịch</div>
                 </div>
               </div>
 
@@ -316,7 +317,7 @@ const Index = () => {
                     <Phone className="w-5 h-5 text-luxury-navy-deep" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-xs uppercase tracking-wider">Hotline 24/7</div>
+                    <div className="text-white/60 text-xs uppercase tracking-wider">Đường dây chuyên viên 24/7</div>
                     <div className="text-white text-xl font-serif group-hover:text-luxury-gold transition-colors">
                       {PHONE}
                     </div>
@@ -327,7 +328,7 @@ const Index = () => {
                     <Mail className="w-5 h-5 text-luxury-navy-deep" />
                   </div>
                   <div>
-                    <div className="text-white/60 text-xs uppercase tracking-wider">Email</div>
+                    <div className="text-white/60 text-xs uppercase tracking-wider">Thư điện tử</div>
                     <div className="text-white text-lg group-hover:text-luxury-gold transition-colors">
                       {EMAIL}
                     </div>
@@ -337,14 +338,14 @@ const Index = () => {
             </div>
 
             <form onSubmit={handleSubmit} className="bg-white p-10 shadow-luxe">
-              <h3 className="font-serif text-luxury-navy text-3xl mb-2">Đăng ký xem nhà</h3>
+              <h3 className="font-serif text-luxury-navy text-3xl mb-2">Đặt lịch tham quan</h3>
               <p className="text-muted-foreground mb-8 text-sm">
-                Để lại thông tin – Chuyên viên liên hệ trong 15 phút.
+                Quý khách vui lòng để lại thông tin — Chuyên viên cao cấp sẽ liên hệ trong vòng 15 phút.
               </p>
 
               <div className="space-y-5">
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Họ và tên *</label>
+                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Quý danh *</label>
                   <Input
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -363,11 +364,11 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Lời nhắn</label>
+                  <label className="text-xs uppercase tracking-wider text-luxury-navy font-semibold">Yêu cầu riêng</label>
                   <Textarea
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tôi muốn xem nhà vào cuối tuần..."
+                    placeholder="Tôi mong muốn tham quan vào cuối tuần..."
                     rows={4}
                     className="mt-2 rounded-none border-luxury-navy/20 focus-visible:ring-luxury-gold resize-none"
                   />
@@ -376,7 +377,7 @@ const Index = () => {
                   type="submit"
                   className="w-full h-14 bg-luxury-navy hover:bg-luxury-navy-deep text-white rounded-none font-semibold tracking-wider uppercase text-sm"
                 >
-                  Gửi yêu cầu xem nhà
+                  Gửi yêu cầu tham quan
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </div>
